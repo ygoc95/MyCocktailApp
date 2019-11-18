@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yigit.myrandomcat">
-<uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:icon="@mipmap/ic_launcher"
         android:label="On The Rocks"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activities.FavPage"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activities.ListPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CocktailPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.HomePage"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

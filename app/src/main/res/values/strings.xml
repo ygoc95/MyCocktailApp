@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">On The Rocks</string>
+    <string name="welcome_text">On The Rocks</string>
 </resources>
