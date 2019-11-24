@@ -34,6 +34,7 @@ class RCViewAdapter (val drinklist: List<Drinks>, val context:Context):RecyclerV
         p0.view.setOnClickListener(){
 
             val intent = Intent(context, CocktailPage::class.java)
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             intent.putExtra("cocktailobject",drinklist[p1])
             intent.putExtra("from","RCViewAdapter")
             context.startActivity(intent)

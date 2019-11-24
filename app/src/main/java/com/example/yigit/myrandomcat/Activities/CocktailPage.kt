@@ -81,33 +81,76 @@ fun indregientTextMaker( drinks: Drinks?):String{
         var ingredients:String="Ingredients:"+"\n"
         if(drinks?.strIngredient1.isNullOrEmpty()==false&&drinks?.strIngredient1!=="null"){
 
-            ingredients=ingredients+drinks?.strMeasure1+" "+drinks?.strIngredient1+"\n"
+            if (drinks?.strMeasure1.isNullOrEmpty()==false&&drinks?.strIngredient1!=="null"){
+                ingredients=ingredients+drinks?.strMeasure1+" "+drinks?.strIngredient1+"\n"
+
+            }
+            else{
+                ingredients=ingredients+drinks?.strIngredient1+"\n"
+
+
+            }
 
         }
         if(drinks?.strIngredient2.isNullOrEmpty()==false&&drinks?.strIngredient2!=="null"){
 
-            ingredients=ingredients+drinks?.strMeasure2+" "+drinks?.strIngredient2+"\n"
+            if (drinks?.strMeasure2.isNullOrEmpty()==false&&drinks?.strIngredient2!=="null"){
+                ingredients=ingredients+drinks?.strMeasure2+" "+drinks?.strIngredient2+"\n"
 
+            }
+            else{
+                ingredients=ingredients+drinks?.strIngredient2+"\n"
+
+
+            }
         }
         if(drinks?.strIngredient3.isNullOrEmpty()==false&&drinks?.strIngredient3!=="null"){
 
-            ingredients=ingredients+drinks?.strMeasure3+" "+drinks?.strIngredient3+"\n"
+            if (drinks?.strMeasure3.isNullOrEmpty()==false&&drinks?.strIngredient3!=="null"){
+                ingredients=ingredients+drinks?.strMeasure3+" "+drinks?.strIngredient3+"\n"
 
+            }
+            else{
+                ingredients=ingredients+drinks?.strIngredient3+"\n"
+
+
+            }
         }
         if(drinks?.strIngredient4.isNullOrEmpty()==false&&drinks?.strIngredient4!=="null"){
 
-            ingredients=ingredients+drinks?.strMeasure4+" "+drinks?.strIngredient4+"\n"
+            if (drinks?.strMeasure4.isNullOrEmpty()==false&&drinks?.strIngredient4!=="null"){
+                ingredients=ingredients+drinks?.strMeasure4+" "+drinks?.strIngredient4+"\n"
 
+            }
+            else{
+                ingredients=ingredients+drinks?.strIngredient4+"\n"
+
+
+            }
         }
         if(drinks?.strIngredient5.isNullOrEmpty()==false&&drinks?.strIngredient5!=="null"){
 
-            ingredients=ingredients+drinks?.strMeasure5+" "+drinks?.strIngredient5+"\n"
+            if (drinks?.strMeasure5.isNullOrEmpty()==false&&drinks?.strIngredient5!=="null"){
+                ingredients=ingredients+drinks?.strMeasure5+" "+drinks?.strIngredient5+"\n"
 
+            }
+            else{
+                ingredients=ingredients+drinks?.strIngredient5+"\n"
+
+
+            }
         }
         if(drinks?.strIngredient6.isNullOrEmpty()==false&&drinks?.strIngredient6!=="null"){
 
-            ingredients=ingredients+drinks?.strMeasure6+" "+drinks?.strIngredient6+"\n"
+            if (drinks?.strMeasure6.isNullOrEmpty()==false&&drinks?.strIngredient6!=="null"){
+                ingredients=ingredients+drinks?.strMeasure6+" "+drinks?.strIngredient6+"\n"
 
+            }
+            else{
+                ingredients=ingredients+drinks?.strIngredient6+"\n"
+
+
+            }
         }
         if(drinks?.strIngredient7.isNullOrEmpty()==false&&drinks?.strIngredient7!==null){
 

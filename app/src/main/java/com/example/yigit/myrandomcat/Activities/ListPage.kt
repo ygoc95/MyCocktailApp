@@ -20,7 +20,7 @@ class ListPage : AppCompatActivity() {
 
         val jsonRequest = JsonRequest()
         recyclerview_search.layoutManager=LinearLayoutManager(this)
-       jsonRequest.jsonparse(this,"https://www.thecocktaildb.com/api/json/v1/YOURAPIKEY/search.php?s="+ss,recyclerview_search)
+       jsonRequest.jsonparse(this,"https://www.thecocktaildb.com/api/json/v1/0674/search.php?s="+ss,recyclerview_search)
 
     }
 
